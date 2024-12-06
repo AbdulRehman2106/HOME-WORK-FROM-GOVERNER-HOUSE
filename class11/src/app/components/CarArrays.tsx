@@ -1,5 +1,4 @@
 import React from 'react'
-import Image from 'next/image';
 import ChildComponents from './ChildComponents';
 
 const CarArrayData =[
@@ -7,33 +6,33 @@ const CarArrayData =[
       id: 1,
       carName: "Toyota Corolla",
       carPrice: "PKR 75,50,000 Lacs",
-      carImage: "image/ToyotaCorolla.jpg",
+      carImage: "/image/ToyotaCorolla.jpg",
       carReviews: "626 Reviews",
-      carRating: "4.5"
+      carRating: 4.5
     },
     {
       id:2,
       carName: "Suzuki Alto",
       carPrice: "PKR 30,50,000 Lacs",
-      carImage: "image/SuzukiAlto.png",
+      carImage: "/image/SuzukiAlto.png",
       carReviews: "202 Reviews",
-      carRating: "4.5"
+      carRating: 4.5
     },
     {
       id:3,
       carName: "Honda City",
       carPrice: "PKR 30,50,000 Lacs",
-      carImage: "image/HondaCity.jpg",
+      carImage: "/image/HondaCity.jpg",
       carReviews: "457 Reviews",
-      carRating: "4.5"
+      carRating: 4.5
     },
     {
       id:4,
       carName: "Honda Civic",
       carPrice: "PKR 99,00,000 Lacs",
-      carImage: "image/HondaCivic.jpg",
+      carImage: "/image/HondaCivic.jpg",
       carReviews: "363 Reviews",
-      carRating: "4.5"
+      carRating: 4.5
     }
   ];
 
@@ -48,12 +47,12 @@ const CarArrayData =[
                 <div key={index}>
                   
                 <ChildComponents 
-                Key={card.id}
+                key={card.id}
                 Name={card.carName}
                 Price={card.carPrice}
                 ImgUrl={card.carImage}
                 Review={card.carReviews}
-                Rating={card. carRating}
+                Rating={card.carRating}
                 />
                 </div>
             ))
