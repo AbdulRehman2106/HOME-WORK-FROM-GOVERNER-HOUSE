@@ -1,10 +1,13 @@
 import React from 'react'
-import State from './components/State'
+import HeroSection from './components/Navbar'
+import CarCards from './components/CarArrays'
 
-export default function Home() {
+export default function page() {
   return (
-    <div>
-      <State />
+    <div className='bg-[#181818]'>
+      {/* <HeroSection /> */}
+      <CarCards />
+      {/* <ParentComponents /> */}
     </div>
   )
 }
