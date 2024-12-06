@@ -1,10 +1,8 @@
 "use client"
 import Link from "next/link"
 import React from "react"
-import { useRouter } from "next/navigation"
 
 export default function Navbar (){
-    const router = useRouter()
     return(
         <div className="bg-yellow-300 font-extrabold text-black">
             

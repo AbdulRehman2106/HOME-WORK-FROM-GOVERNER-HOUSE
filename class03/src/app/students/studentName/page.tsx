@@ -1,10 +1,6 @@
 "use client"
-import { useRouter } from "next/navigation"
 import React from "react"
-import Link from "next/link"
 const StudentName = () => {
-    const router = useRouter
-
     return(
         <section>
             <h1>I am student from Dynamic Route</h1>
