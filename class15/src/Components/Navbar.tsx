@@ -10,7 +10,8 @@ export default function Navbar() {
         
         <h1 className="text-4xl font-extrabold italic text-slate-700 hover:text-zinc-600 underline hover:underline cursor-pointer">API, <br /> Dynamic Routing, <br /> Rendering Practice</h1>
 
-        <div className="flex justify-center mt-16 font-extrabold italic pb-5 transition">
+        <div className="flex flex-wrap justify-center mt-16 font-extrabold italic pb-5 transition">
+
 
           <Link href="/">
           
