@@ -10,9 +10,9 @@ export default async function Home() {
 
     <div className="bg-black font-extrabold italic pb-24 min-h-screen">
 
-      <h1 className="text-center text-4xl md:text-5xl cursor-pointer underline hover:underline text-purple-800 hover:text-purple-500 mb-10 py-14">Photos</h1>
+      <h1 className="text-center text-4xl cursor-pointer underline hover:underline text-purple-800 hover:text-purple-500 mb-10 py-14">Photos</h1>
 
-      <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 gap-6">
 
         {response.map((photos: any) => (
 
@@ -20,7 +20,7 @@ export default async function Home() {
 
             <Link href={`/photos/${photos.id}`}>
 
-              <h1 className="text-lg md:text-xl font-extrabold italic hover:underline text-purple-800 hover:text-purple-500">
+              <h1 className="text-lg font-extrabold italic hover:underline text-purple-800 hover:text-purple-500">
 
                 {photos.id} &nbsp; {photos.title}
 
